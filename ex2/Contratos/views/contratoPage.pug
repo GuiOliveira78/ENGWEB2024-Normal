@@ -1,0 +1,45 @@
+extends layout 
+
+block content 
+    .w3-card-4
+        header.w3-container.w3-teal
+            h1 Contrato #{contrato.id}
+    
+        .w3-container
+            ul.w3-ul.w3-card-4(style="width:50%")
+            li 
+                b Número Anúncio: 
+                span= contrato.nAnuncio
+            li 
+                b Tipo de Procedimento:
+                span= contrato.tipoprocedimento
+            li 
+                b Objeto do Contrato: 
+                span= contrato.objectoContrato
+            li 
+                b Data de Publicação: 
+                span= contrato.dataPublicacao
+            li 
+                b Data de Celebração do Contrato: 
+                span= contrato.dataCelebracaoContrato
+            li 
+                b Preço Contratual: 
+                span= contrato.precoContratual
+            li 
+                b Prazo de Execução: 
+                span= contrato.prazoExecucao
+            li 
+                b NIPC da Entidade Comunicante: 
+                span= contrato.NIPC_entidade_comunicante
+            li 
+                b Entidade Comunicante: 
+                span= contrato.entidade_comunicante
+            li 
+                b Fundamentação: 
+                span= contrato.fundamentacao
+        
+        footer.w3-container.w3-teal
+            adress
+                span Gerado por Guilherme Oliveira em #{date} - [
+                a(href="/") Voltar
+                span ]
